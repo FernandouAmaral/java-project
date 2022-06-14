@@ -1,0 +1,21 @@
+package personasYautos;
+
+import java.util.LinkedList;
+
+public class Persona {
+	public String nombre;
+	public String ci;
+	public boolean mayorEdad;
+	//public Auto auto; // cuando usamos linkedlist no necesitamos este punto ya que con linkedlist podremos tener una lista de autos
+	LinkedList<Auto> autos = new LinkedList<Auto>();
+	
+	public Persona(String nombre, String ci, boolean mayorEdad,LinkedList<Auto>autos) {
+		this.nombre = nombre;
+		this.ci = ci;
+		this.mayorEdad = mayorEdad;
+		this.autos = autos;
+	}
+	
+
+}
+ //una pe

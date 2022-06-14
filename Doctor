@@ -1,0 +1,19 @@
+package personasYautos;
+
+public class Auto {
+	public String marca;
+	public String modelo;
+	public String matricula;
+	public int anio;
+	public Persona dueño;
+	
+	public Auto(String marca, String modelo, String matricula, int i,Persona dueño) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.matricula = matricula;
+		this.dueño = dueño; 
+	}
+	
+	
+
+}

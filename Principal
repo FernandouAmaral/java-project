@@ -1,0 +1,45 @@
+package personasYautos;
+
+import java.util.LinkedList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+	//Listas de autos 
+		Auto auto1 = new Auto("Chevrolet","Aveo G3","MG344", 2014,null);
+		Auto auto2 = new Auto("Toyota","Corola","MT324", 2004,null);
+		Auto auto3 = new Auto("Tesla","T12","GG2054", 2017,null);
+		Auto auto4 = new Auto("Ferrari","FG15","DRK445", 2022,null);
+	// Fin de la lista de autos
+		
+		LinkedList<Auto> autosDeGuille =  new LinkedList<Auto>(); 
+		        //Metodo //NameList
+		autosDeGuille.add(auto1);
+		autosDeGuille.add(auto2);
+		autosDeGuille.add(auto3);
+		
+		
+		Persona persona1 = new Persona("guillermo","222354",true,autosDeGuille);
+		
+		auto1.dueño = persona1;
+		auto2.dueño = persona1;
+		auto3.dueño = persona1;
+		
+		System.out.println(persona1);
+		
+		//Auto autoPersona1 = persona1.auto;
+		
+		/*Persona persona2 = new Persona("Roberto","24423",false,null);
+		Auto autoPersona2 = persona2.auto;
+		
+		System.out.println(autoPersona1.marca);
+		
+		if (autoPersona2 == null) {
+			System.out.println("no tiene auto" );
+		}else {
+			System.out.println("tiene auto  "   );
+		}*/
+	}
+
+}
