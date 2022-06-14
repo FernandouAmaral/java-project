@@ -25,7 +25,7 @@ public class Principal {
 		auto1.dueño = persona1;
 		auto2.dueño = persona1;
 		auto3.dueño = persona1;
-		
+		auto4.dueño = persona1;
 		System.out.println(persona1);
 		
 		//Auto autoPersona1 = persona1.auto;
